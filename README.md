@@ -13,9 +13,11 @@ cd mnist-draw
 # Install required modules
 pip install -r requirements.txt
 
-# Start a local ython server
+# Start a local Python server
 python -m http.server --cgi 8000
 ```
 
 After the server has initialized open a browser and navigate to 
 `http://localhost:8000/index.html` to launch the interface. 
+
+test change

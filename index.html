@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -21,11 +22,11 @@
           <canvas id="canvas" width="364" height="364"></canvas>
         </div>
         <div class="col-md-4 col-xs-12">
-            <h2 id="header">Digit Prediction</h2>
+            <h2 id="header">MNIST Draw</h2>
             <p><small>Draw a single digit (0-9) in the box to the left, then click Predict.</small></p>
-            <p><small>A machine learning model trained against the MNIST character dataset will classify the image. Relative scores for each possible outcome are displayed below.</small></p>
+            <p><small>A machine learning model trained against the MNIST character dataset will classify the image. Scores for each classification label are plotted below.</small></p>
             <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-primary" id="predict">Predict</button>
+                <button type="button" class="btn btn-primary" id="predict">Predict <i id="status"></i></button>
                 <button type="button" class="btn btn-default" id="clear-canvas">Clear</button>
             </div>
             <div>

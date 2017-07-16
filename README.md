@@ -22,7 +22,12 @@ python -m http.server --cgi 8000
 After the server has initialized open a browser and navigate to 
 `http://localhost:8000/index.html` to launch the interface.
 
-![mnist-draw](http://i.imgur.com/I08PhZA.gif)
-
-
 ![mnist-draw](http://imgur.com/LrSOTXm.gif)
+
+
+<p>
+<img src="http://i.imgur.com/WacLk6N.gif" width="400">
+</p>
+
+
+

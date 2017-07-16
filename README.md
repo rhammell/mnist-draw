@@ -35,5 +35,3 @@ Interface example:
 <img src="http://i.imgur.com/WacLk6N.gif" width="600">
 </p>
 
-
-

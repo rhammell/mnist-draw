@@ -1,7 +1,8 @@
 # mnist-draw
-Draw and classify digits (0-9) in a browser using machine learning
+This repository contains a single page website that enables users to draw and classify digits (0-9) using machine learning. 
 
 # Setup 
+Python 3.5+ is required for compatability with all required modules
 
 ```bash
 # Clone this repository
@@ -12,10 +13,11 @@ cd mnist-draw
 
 # Install required modules
 pip install -r requirements.txt
+```
 
+# Usage
 # Start a local Python server
 python -m http.server --cgi 8000
-```
 
 After the server has initialized open a browser and navigate to 
 `http://localhost:8000/index.html` to launch the interface.

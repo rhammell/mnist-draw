@@ -19,3 +19,5 @@ python -m http.server --cgi 8000
 
 After the server has initialized open a browser and navigate to 
 `http://localhost:8000/index.html` to launch the interface.
+
+![plane](http://i.imgur.com/I08PhZA.gif)

@@ -26,7 +26,7 @@ After the server has initialized open a browser and navigate to
 
 
 <p>
-<img src="http://i.imgur.com/WacLk6N.gif" width="400">
+<img src="http://i.imgur.com/WacLk6N.gif" width="600">
 </p>
 
 

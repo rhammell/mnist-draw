@@ -37,11 +37,7 @@ An example of the website's interface is shown below. Users are guided to draw a
 Results are displayed as a bar graph where each classification label recieves a score between 0.0 and 1.0 from the machine learning model. Clear the canvas with the 'Clear' button to draw and process other digits.  
 
 Interface example: 
-
-![mnist-draw](http://imgur.com/LrSOTXm.gif)
-
-
 <p>
-<img src="http://i.imgur.com/WacLk6N.gif" width="600">
+<img src="http://i.imgur.com/fmIa0e5.gif" width="600">
 </p>
 

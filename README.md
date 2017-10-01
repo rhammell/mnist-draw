@@ -39,5 +39,5 @@ A convolutional neural network (CNN) is defined within the `model.py` module usi
 
 The defined CNN can be trained against the MNIST dataset by running the `train.py` script. This script will automaticallly load the MNIST dataset from the TFLearn library to use as input, and the trained model's parameter files are saved into the `models` directory. Pre-trained model files are made available in this directory already.
 
-The `mnist.py` script implements this trained model against the user's hand-drawn input. 
+The `mnist.py` script implements this trained model against the user's hand-drawn input. When the 'Predict' button is clicked, the contents of the drawing canvas are posted to this script as data url, and a JSON object containing the model's predictions is returned. 
 

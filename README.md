@@ -28,8 +28,8 @@ An example of the website's interface is shown below. Users are guided to draw a
 Results are displayed as a bar graph where each classification label recieves a score between 0.0 and 1.0 from the machine learning model. Clear the canvas with the 'Clear' button to draw and process other digits.  
 
 Interface example: 
-<p>
-<img src="http://i.imgur.com/fmIa0e5.gif" width="600">
+<p align="center">
+  <img src="img/preview.gif" width="600">
 </p>
 
 ## Machine Learning Model

@@ -1,43 +1,70 @@
-# mnist-draw
-This repository contains a single page website that enables users to hand-draw and classify digits (0-9) using machine learning. A machine learning model trained against the MNIST dataset is used for classification. 
+# Getting Started with Create React App
 
-# Setup 
-Python 3.5+ is required for compatability with all required modules
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-```bash
-# Clone this repository
-git clone https://github.com/rhammell/mnist-draw.git
+## Available Scripts
 
-# Go into the repository
-cd mnist-draw
+In the project directory, you can run:
 
-# Install required modules
-pip install -r requirements.txt
-```
+### `npm start`
 
-# Usage
-To launch the website, begin by starting a Python server from the repository folder:
-```bash
-# Start Python server
-python -m http.server --cgi 8000
-```
-Then open a browser and navigate to `http://localhost:8000/index.html` to view it. 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-An example of the website's interface is shown below. Users are guided to draw a digit (0-9) on the empty canvas and then hit the 'Predict' button to process their drawing. Allow up to 1 minute for the processing to complete. Any errors during processing will be indicated with a warning icon and printed to the console. 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Results are displayed as a bar graph where each classification label recieves a score between 0.0 and 1.0 from the machine learning model. Clear the canvas with the 'Clear' button to draw and process other digits.  
+### `npm test`
 
-Interface example: 
-<p align="center">
-  <img src="img/preview.gif" width="600">
-</p>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Machine Learning Model
-Python scripts related to defining, training, and implementing the machine learning model are contained within the `cgi-bin` folder. 
+### `npm run build`
 
-A convolutional neural network (CNN) is defined within the `model.py` module using the [TFLearn](http://tflearn.org/) library. This model is configured for MNIST data inputs. 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The defined CNN can be trained against the MNIST dataset by running the `train.py` script. This script will automaticallly load the MNIST dataset from the TFLearn library to use as input, and the trained model's parameter files are saved into the `models` directory. Pre-trained model files are made available in this directory already.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-The `mnist.py` script implements this trained model against the user's hand-drawn input. When the 'Predict' button is clicked, the contents of the drawing canvas are posted to this script as data url, and a JSON object containing the model's predictions is returned. 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
